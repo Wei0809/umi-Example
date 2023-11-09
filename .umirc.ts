@@ -28,6 +28,14 @@ export default defineConfig({
       name: ' CRUD 示例',
       path: '/table',
       component: './Table',
+    },{
+      name: 'TestPage',
+      path: '/test-page',
+      routes:[{
+      name: 'TestPageA',
+      path: '/test-pageA/:id',
+      component: './TestPage/TestPageA',
+     }]
     },
   ],
   npmClient: 'npm',
